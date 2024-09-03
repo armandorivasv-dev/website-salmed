@@ -10,19 +10,19 @@ export const Epp = () => {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        backgroundImage: 'url(assets/images/salmed-epp.png)',
+        backgroundImage: mdUp ? 'url(assets/images/salmed-epp.png)' : 'url(assets/images/salmed-epp-mobile.png)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        //backgroundPosition: 'center',
         minHeight: '50vh',
         py: 10,
-        '::before': {
-          content: '""',
-          position: 'absolute',
-          width: '100%',
-          height: '50%',
-          backgroundColor: 'rgba(0, 0, 0, 0.4)',
-          zIndex: 0,
-        },
+        // '::before': {
+        //   content: '""',
+        //   position: 'absolute',
+        //   width: '100%',
+        //   height: mdUp ? '100vh' : '69vh',
+        //   backgroundColor: 'rgba(0, 0, 0, 0.4)',
+        //   zIndex: 0,
+        // },
       }}
     >
       <Container>
@@ -36,7 +36,9 @@ export const Epp = () => {
             variant={mdUp ? 'h2' : 'h3'}
             color='white'
             textAlign={mdUp ? 'left' : 'center'}
+            //color={mdUp ? 'white' : 'black'}
             zIndex={1}
+            //sx={{ backgroundColor: 'rgba(0, 0, 0, 0.4)' }}
           >
             Equipos de <br />
             Protección <br />
