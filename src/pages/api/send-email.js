@@ -12,12 +12,12 @@ export default async function handler(req, res) {
   // Aplicar limitación de tasa
   limiter(req, res, async () => {
     // Validación de origen
-    // const allowedOrigins = ['https://salmed.net', 'https://www.salmed.net'];
-    // const origin = req.headers.origin;
+    const allowedOrigins = ['https://salmed.net', 'https://www.salmed.net'];
+    const origin = req.headers.origin;
 
-    // if (!allowedOrigins.includes(origin)) {
-    //   return res.status(403).json({ message: 'Forbidden' });
-    // }
+    if (!allowedOrigins.includes(origin)) {
+      return res.status(403).json({ message: 'Forbidden' });
+    }
 
     if (req.method === 'POST') {
       const { fullname, email, phone, message } = req.body;
