@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Stack, Typography, Button, Container, useMediaQuery } from '@mui/material';
 import { getImageProps } from 'next/image';
-import { Padding } from '@mui/icons-material';
 
 function getBackgroundImage(srcSet = '') {
   const imageSet = srcSet
@@ -35,6 +34,7 @@ export const Epp = () => {
 
     backgroundImage,
   };
+
   return (
     <Box
       id='epp'
@@ -68,6 +68,8 @@ export const Epp = () => {
             Protegemos a tus colaboradores, potenciamos tu negocio.
           </Typography>
           <Button
+            href='/assets/pdfs/catalogo-epp-salmed-04sep2024.pdf'
+            download='catalogo-epp-salmed-04sep2024.pdf'
             variant='contained'
             color='primary'
             size='large'
