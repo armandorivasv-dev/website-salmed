@@ -1,5 +1,6 @@
 import { alpha } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
+import '@fontsource/roboto';
 
 export const brand = {
   0: '#FFFFFF',
@@ -131,7 +132,7 @@ const getDesignTokens = (mode) => ({
     },
   },
   typography: {
-    fontFamily: ['"Roboto"', '"Helvetica"', '"Arial"', 'sans-serif'].join(','),
+    fontFamily: ['"Roboto"', '"Arial"', 'sans-serif'].join(','),
     h1: {
       fontSize: '5rem',
       fontWeight: 600,

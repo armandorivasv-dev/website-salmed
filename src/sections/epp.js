@@ -1,29 +1,44 @@
 import React from 'react';
 import { Box, Stack, Typography, Button, Container, useMediaQuery } from '@mui/material';
+import { getImageProps } from 'next/image';
+import { Padding } from '@mui/icons-material';
+
+function getBackgroundImage(srcSet = '') {
+  const imageSet = srcSet
+    .split(', ')
+    .map((str) => {
+      const [url, dpi] = str.split(' ');
+      return `url("${url}") ${dpi}`;
+    })
+    .join(', ');
+  return `image-set(${imageSet})`;
+}
 
 export const Epp = () => {
   const mdUp = useMediaQuery((theme) => theme.breakpoints.up('md'));
+  const {
+    props: { srcSet },
+  } = getImageProps({
+    alt: '',
+    width: mdUp ? 1920 : 500,
+    height: 572,
+    src: mdUp ? '/assets/images/salmed-epp.png' : '/assets/images/salmed-epp-mobile.png',
+  });
+  const backgroundImage = getBackgroundImage(srcSet);
+  const style = {
+    height: '50vh',
+    width: '100vw',
+    backgroundSize: 'cover',
+    maxHeight: '70vh',
+    paddingTop: '100px',
+    paddingBottom: '400px',
+
+    backgroundImage,
+  };
   return (
     <Box
       id='epp'
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        backgroundImage: mdUp ? 'url(assets/images/salmed-epp.png)' : 'url(assets/images/salmed-epp-mobile.png)',
-        backgroundSize: 'cover',
-        //backgroundPosition: 'center',
-        minHeight: '50vh',
-        py: 10,
-        // '::before': {
-        //   content: '""',
-        //   position: 'absolute',
-        //   width: '100%',
-        //   height: mdUp ? '100vh' : '69vh',
-        //   backgroundColor: 'rgba(0, 0, 0, 0.4)',
-        //   zIndex: 0,
-        // },
-      }}
+      style={style}
     >
       <Container>
         <Stack
@@ -36,9 +51,7 @@ export const Epp = () => {
             variant={mdUp ? 'h2' : 'h3'}
             color='white'
             textAlign={mdUp ? 'left' : 'center'}
-            //color={mdUp ? 'white' : 'black'}
             zIndex={1}
-            //sx={{ backgroundColor: 'rgba(0, 0, 0, 0.4)' }}
           >
             Equipos de <br />
             Protección <br />

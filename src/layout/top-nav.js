@@ -42,11 +42,11 @@ const menuItems = [
     title: 'Productos',
     value: 'epp',
   },
-  {
-    id: 4,
-    title: 'Testimonios',
-    value: 'testimonials',
-  },
+  // {
+  //   id: 4,
+  //   title: 'Testimonios',
+  //   value: 'testimonials',
+  // },
 ];
 
 function TopNav({ mode }) {

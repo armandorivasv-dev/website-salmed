@@ -2,8 +2,32 @@ import { useState } from 'react';
 import { Box, Stack, Typography, Button, useMediaQuery } from '@mui/material';
 import { ContactForm } from '../components/contact-form';
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
+import { getImageProps } from 'next/image';
+
+function getBackgroundImage(srcSet = '') {
+  const imageSet = srcSet
+    .split(', ')
+    .map((str) => {
+      const [url, dpi] = str.split(' ');
+      return `url("${url}") ${dpi}`;
+    })
+    .join(', ');
+  return `image-set(${imageSet})`;
+}
 
 export const Hero = () => {
+  const mdUp = useMediaQuery((theme) => theme.breakpoints.up('md'));
+  const {
+    props: { srcSet },
+  } = getImageProps({
+    alt: '',
+    width: 1920,
+    height: 1168,
+    src: mdUp ? '/assets/images/salmed-hero.png' : '/assets/images/salmed-hero-mobile.png',
+  });
+  const backgroundImage = getBackgroundImage(srcSet);
+  const style = { height: '100vh', width: '100vw', backgroundSize: 'cover', backgroundImage };
+
   const [openContactForm, setOpenContactForm] = useState(false);
   const handleOpenContactForm = () => setOpenContactForm(true);
   const handleCloseContactForm = () => setOpenContactForm(false);
@@ -13,30 +37,9 @@ export const Hero = () => {
       behavior: 'smooth',
     });
   };
-  const mdUp = useMediaQuery((theme) => theme.breakpoints.up('md'));
-  return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundImage: 'url(assets/images/salmed-hero.png)',
 
-        minHeight: '100vh',
-        backgroundSize: 'cover',
-        '::before': {
-          content: '""',
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100vh',
-          backgroundColor: 'rgba(0, 0, 0, 0.4)',
-          zIndex: 0,
-        },
-      }}
-    >
+  return (
+    <Box style={style}>
       <Stack
         direction='column'
         justifyContent='flex-end'
@@ -48,6 +51,7 @@ export const Hero = () => {
           variant={mdUp ? 'h1' : 'h2'}
           color='white'
           textAlign='center'
+          sx={{ pt: '30vh' }}
         >
           Medicina <br /> Ocupacional
         </Typography>
@@ -68,17 +72,17 @@ export const Hero = () => {
         >
           Escríbenos
         </Button>
+        <Box
+          position='absolute'
+          bottom='1%'
+        >
+          <ArrowCircleDownIcon
+            onClick={handleScroll}
+            style={{ cursor: 'pointer' }}
+            sx={{ fontSize: '60px', color: 'white' }}
+          />
+        </Box>
       </Stack>
-      <Box
-        position='absolute'
-        bottom='1%'
-      >
-        <ArrowCircleDownIcon
-          onClick={handleScroll}
-          style={{ cursor: 'pointer' }}
-          sx={{ fontSize: '60px', color: 'white' }}
-        />
-      </Box>
       <ContactForm
         open={openContactForm}
         handleClose={handleCloseContactForm}
