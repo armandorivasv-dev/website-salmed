@@ -13,6 +13,7 @@ import {
   Toolbar,
   AppBar,
   Box,
+  Menu,
 } from '@mui/material';
 import Image from 'next/image';
 import { ContactForm } from '@/components/contact-form';
@@ -36,6 +37,10 @@ const menuItems = [
     id: 2,
     title: 'Servicios',
     value: 'services',
+    // submenu: [
+    //   { id: 0, title: 'Personales', value: 'personal-services' },
+    //   { id: 1, title: 'Profesionales', value: 'professional-services' },
+    // ],
   },
   {
     id: 3,
@@ -51,14 +56,22 @@ const menuItems = [
 
 function TopNav({ mode }) {
   const [open, setOpen] = useState(false);
-
   const [openContactForm, setOpenContactForm] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
 
   const handleOpenContactForm = () => setOpenContactForm(true);
   const handleCloseContactForm = () => setOpenContactForm(false);
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
+  };
+
+  const handleMenuOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
   };
 
   const scrollToSection = (sectionId) => {
@@ -126,18 +139,58 @@ function TopNav({ mode }) {
               />
               <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                 {menuItems.map((item, index) => (
-                  <MenuItem
-                    key={index}
-                    onClick={() => scrollToSection(item.value)}
-                    sx={{ py: '6px', px: '12px' }}
-                  >
-                    <Typography
-                      variant='subtitle1'
-                      color='text.primary'
-                    >
-                      {item.title}
-                    </Typography>
-                  </MenuItem>
+                  <div key={index}>
+                    {item.submenu ? (
+                      <>
+                        <MenuItem
+                          onClick={handleMenuOpen}
+                          sx={{ py: '6px', px: '12px' }}
+                        >
+                          <Typography
+                            variant='subtitle1'
+                            color='text.primary'
+                          >
+                            {item.title}
+                          </Typography>
+                        </MenuItem>
+                        <Menu
+                          anchorEl={anchorEl}
+                          open={Boolean(anchorEl)}
+                          onClose={handleMenuClose}
+                        >
+                          {item.submenu.map((subItem) => (
+                            <MenuItem
+                              key={subItem.id}
+                              onClick={() => {
+                                scrollToSection(subItem.value);
+                                handleMenuClose();
+                              }}
+                              sx={{ py: '6px', px: '12px' }}
+                            >
+                              <Typography
+                                variant='subtitle1'
+                                color='text.primary'
+                              >
+                                {subItem.title}
+                              </Typography>
+                            </MenuItem>
+                          ))}
+                        </Menu>
+                      </>
+                    ) : (
+                      <MenuItem
+                        onClick={() => scrollToSection(item.value)}
+                        sx={{ py: '6px', px: '12px' }}
+                      >
+                        <Typography
+                          variant='subtitle1'
+                          color='text.primary'
+                        >
+                          {item.title}
+                        </Typography>
+                      </MenuItem>
+                    )}
+                  </div>
                 ))}
                 <MenuItem
                   onClick={handleOpenContactForm}
@@ -183,18 +236,58 @@ function TopNav({ mode }) {
                     priority={true}
                   />
                   {menuItems.map((item, index) => (
-                    <MenuItem
-                      key={index}
-                      onClick={() => scrollToSection(item.value)}
-                      sx={{ py: '6px', px: '12px' }}
-                    >
-                      <Typography
-                        variant='subtitle1'
-                        color='text.primary'
-                      >
-                        {item.title}
-                      </Typography>
-                    </MenuItem>
+                    <div key={index}>
+                      {item.submenu ? (
+                        <>
+                          <MenuItem
+                            onClick={handleMenuOpen}
+                            sx={{ py: '6px', px: '12px' }}
+                          >
+                            <Typography
+                              variant='subtitle1'
+                              color='text.primary'
+                            >
+                              {item.title}
+                            </Typography>
+                          </MenuItem>
+                          <Menu
+                            anchorEl={anchorEl}
+                            open={Boolean(anchorEl)}
+                            onClose={handleMenuClose}
+                          >
+                            {item.submenu.map((subItem) => (
+                              <MenuItem
+                                key={subItem.id}
+                                onClick={() => {
+                                  scrollToSection(subItem.value);
+                                  handleMenuClose();
+                                }}
+                                sx={{ py: '6px', px: '12px' }}
+                              >
+                                <Typography
+                                  variant='subtitle1'
+                                  color='text.primary'
+                                >
+                                  {subItem.title}
+                                </Typography>
+                              </MenuItem>
+                            ))}
+                          </Menu>
+                        </>
+                      ) : (
+                        <MenuItem
+                          onClick={() => scrollToSection(item.value)}
+                          sx={{ py: '6px', px: '12px' }}
+                        >
+                          <Typography
+                            variant='subtitle1'
+                            color='text.primary'
+                          >
+                            {item.title}
+                          </Typography>
+                        </MenuItem>
+                      )}
+                    </div>
                   ))}
                   <MenuItem
                     onClick={handleOpenContactForm}
