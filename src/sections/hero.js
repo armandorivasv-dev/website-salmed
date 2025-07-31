@@ -69,6 +69,7 @@ export const Hero = () => {
           color='primary'
           size='large'
           onClick={handleOpenContactForm}
+          aria-label='Botón Acceso a WhatsApp'
         >
           Escríbenos
         </Button>
@@ -81,6 +82,7 @@ export const Hero = () => {
             onClick={handleScroll}
             style={{ cursor: 'pointer' }}
             sx={{ fontSize: '60px', color: 'white' }}
+            aria-label='Botón Desplazamiento a la siguiente sección'
           />
         </Box>
       </Stack>

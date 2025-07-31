@@ -73,6 +73,7 @@ export const Epp = () => {
             variant='contained'
             color='primary'
             size='large'
+            aria-label='Descargar catálogo de Equipos de Protección Personal en formato PDF'
           >
             Descargar Catálogo (PDF)
           </Button>

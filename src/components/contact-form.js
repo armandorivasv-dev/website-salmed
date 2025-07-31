@@ -224,6 +224,7 @@ export const ContactForm = (props) => {
                         borderRadius: '10px',
                         marginTop: '50px',
                       }}
+                      aria-label='Nombre y Apellido de contacto'
                     />
 
                     <TextField
@@ -242,6 +243,7 @@ export const ContactForm = (props) => {
                         backgroundColor: 'white',
                         borderRadius: '10px',
                       }}
+                      aria-label='Email de contacto'
                     />
 
                     <TextField
@@ -260,6 +262,7 @@ export const ContactForm = (props) => {
                         backgroundColor: 'white',
                         borderRadius: '10px',
                       }}
+                      aria-label='Teléfono de contacto'
                     />
 
                     <TextField
@@ -280,6 +283,7 @@ export const ContactForm = (props) => {
                         backgroundColor: 'white',
                         borderRadius: '10px',
                       }}
+                      aria-label='Mensaje de contacto'
                     />
                   </Stack>
                   <FormControlLabel
@@ -332,10 +336,18 @@ export const ContactForm = (props) => {
                         />
                       </Box>
                       {resultOperation === randomOperation.result && (
-                        <CheckIcon sx={{ color: 'green', fontSize: '30px' }} />
+                        <CheckIcon
+                          sx={{ color: 'green', fontSize: '30px' }}
+                          aria-label='Respuesta correcta'
+                        />
                       )}
 
-                      {validateOperation === false && <ClearIcon sx={{ color: 'red', fontSize: '30px' }} />}
+                      {validateOperation === false && (
+                        <ClearIcon
+                          sx={{ color: 'red', fontSize: '30px' }}
+                          aria-label='Respuesta incorrecta'
+                        />
+                      )}
                     </Stack>
                   )}
 
@@ -351,6 +363,7 @@ export const ContactForm = (props) => {
                       onClick={handleSubmit}
                       color='primary'
                       disabled={!checked || resultOperation !== randomOperation.result}
+                      aria-label='Enviar Formulario'
                     >
                       ENVIAR
                     </Button>

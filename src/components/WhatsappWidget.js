@@ -11,11 +11,12 @@ export const WhatsappWidget = () => {
       href='https://wa.me/584126070925?text=Hola,%20me%20gustaría%20agendar%20una%20cita%20con%20Salmed.'
       passHref
       target='_blank'
+      aria-label='Botón Acceso a WhatsApp'
     >
       <Fab
         variant='extended'
         color='success'
-        aria-label='Contacto WhatsApp'
+        aria-label='Botón Acceso a WhatsApp'
         sx={{
           position: 'fixed',
           //padding: 4,
@@ -27,7 +28,10 @@ export const WhatsappWidget = () => {
           },
         }}
       >
-        <WhatsAppIcon sx={{ mr: 1, color: 'white', fontSize: { xs: 35, md: 40 } }} />
+        <WhatsAppIcon
+          sx={{ mr: 1, color: 'white', fontSize: { xs: 35, md: 40 } }}
+          aria-label='Ícono de WhatsApp'
+        />
         <Typography
           variant={isMobile ? 'body1' : 'subtitle1'}
           color='white'
