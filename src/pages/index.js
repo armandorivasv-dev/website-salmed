@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Salmed - Medicina Ocupacional</title>
+        <title>Salmed - Servicios de Salud Ocupacional, Ergonomía y Bienestar laboral</title>
         <meta
           name='description'
-          content='Soluciones ágiles y personalizadas para la salud ocupacional.'
+          content='Expertos en Salud Ocupacional y Medicina del Trabajo en Venezuela. Ofrecemos servicios de Ergonomía, gestión de Riesgos Laborales y Psicosociales, evaluaciones de puesto de trabajo y programas de seguridad y salud laboral (INPSASEL). Suministramos Equipos de Protección Personal (EPP) como botas de seguridad. Atendemos en Caracas, Valencia, Porlamar, Maturín, Barcelona y Puerto La Cruz.'
         />
         <meta
           name='viewport'

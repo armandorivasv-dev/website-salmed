@@ -38,6 +38,12 @@ const cardData = [
     description:
       'Impulsamos una cultura de seguridad en tu empresa a través de programas de capacitación personalizados. Diseñamos soluciones prácticas y efectivas que permiten a tus colaboradores identificar y prevenir riesgos. ',
   },
+  {
+    id: '07.',
+    title: 'Servicio Médico In Company',
+    description:
+      'Atención médica general y ocupacional directamente en tu empresa. Cuidamos la salud y bienestar de tus empleados, optimizando su rendimiento laboral con profesionales calificados y equipo de vanguardia. ',
+  },
 ];
 
 export const Services = () => {

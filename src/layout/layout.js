@@ -5,6 +5,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import getCustomTheme from '@/styles/get-custom-theme';
 import CssBaseline from '@mui/material/CssBaseline';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { WhatsappWidget } from '@/components/WhatsappWidget';
 
 export default function Layout({ children }) {
   const customTheme = createTheme(getCustomTheme('light'));
@@ -16,6 +17,7 @@ export default function Layout({ children }) {
         <TopNav mode={'light'} />
         <main>{children}</main>
         <SpeedInsights />
+        <WhatsappWidget />
         <Footer />
       </ThemeProvider>
     </>

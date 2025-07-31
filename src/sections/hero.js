@@ -26,7 +26,7 @@ export const Hero = () => {
     src: mdUp ? '/assets/images/salmed-hero.png' : '/assets/images/salmed-hero-mobile.png',
   });
   const backgroundImage = getBackgroundImage(srcSet);
-  const style = { height: '100vh', width: '100vw', backgroundSize: 'cover', backgroundImage };
+  const style = { height: '100vh', width: '100%', backgroundSize: 'cover', backgroundImage };
 
   const [openContactForm, setOpenContactForm] = useState(false);
   const handleOpenContactForm = () => setOpenContactForm(true);
@@ -75,6 +75,7 @@ export const Hero = () => {
         <Box
           position='absolute'
           bottom='1%'
+          sx={{ display: { xs: 'none', md: 'block' } }}
         >
           <ArrowCircleDownIcon
             onClick={handleScroll}

@@ -26,7 +26,7 @@ export const Epp = () => {
   const backgroundImage = getBackgroundImage(srcSet);
   const style = {
     height: '50vh',
-    width: '100vw',
+    width: '100%', // Cambiado de '100vw' a '100%' para evitar scroll horizontal
     backgroundSize: 'cover',
     maxHeight: '70vh',
     paddingTop: '100px',
