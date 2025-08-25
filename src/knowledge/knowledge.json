@@ -1,0 +1,521 @@
+[
+  {
+    "id": "servicio-medico-ocupacional",
+    "type": "item",
+    "content": "Ofrecemos un completo Servicio Médico Ocupacional enfocado en la prevención, diagnóstico y manejo de la salud de los trabajadores. Incluye exámenes laborales (ingreso, periódicos, egreso), vigilancia epidemiológica, programas de prevención, audiometrías, espirometrías, electrocardiogramas y gestión para estudios de rayos X y resonancias magnéticas. Para más información o cotizaciones, por favor escribe a info@salmed.net o contáctanos por WhatsApp.",
+    "tags": [
+      "servicio medico ocupacional",
+      "medicina del trabajo",
+      "examenes laborales",
+      "salud ocupacional",
+      "vigilancia epidemiologica",
+      "audiometria",
+      "espirometria",
+      "rayos x",
+      "resonancia magnetica",
+      "ofrecen medicina ocupacional",
+      "hacen examenes medicos para empresas"
+    ]
+  },
+  {
+    "id": "medicina-ocupacional-especializada",
+    "type": "item",
+    "content": "Contamos con Medicina Ocupacional Especializada, a través de la cual diseñamos programas de capacitación a la medida de tu organización. Analizamos las necesidades específicas de tu empresa para desarrollar soluciones formativas personalizadas que fortalezcan la cultura de seguridad y salud. Para más información o cotizaciones, por favor escribe a info@salmed.net o contáctanos por WhatsApp.",
+    "tags": [
+      "medicina ocupacional especializada",
+      "programas de capacitacion a medida",
+      "formacion en salud laboral",
+      "cursos de medicina ocupacional",
+      "soluciones de capacitacion para empresas",
+      "capacitacion empresarial en salud"
+    ]
+  },
+  {
+    "id": "servicios-ergonomia",
+    "type": "item",
+    "content": "Brindamos servicios integrales de Ergonomía para optimizar la interacción entre los empleados y su entorno de trabajo. Realizamos evaluaciones de puestos, estudios antropométricos, análisis de riesgos psicosociales y diseñamos programas ergonómicos para mejorar la productividad y prevenir lesiones. Para más información o cotizaciones, por favor escribe a info@salmed.net o contáctanos por WhatsApp.",
+    "tags": [
+      "servicios de ergonomia",
+      "ergonomia ocupacional",
+      "evaluacion de puestos de trabajo",
+      "estudios ergonomicos",
+      "prevencion de riesgos ergonomicos",
+      "diseño de puestos de trabajo",
+      "riesgos psicosociales",
+      "ergonomia cognitiva",
+      "estudio antropometrico",
+      "inspecciones ergonomicas"
+    ]
+  },
+  {
+    "id": "seguridad-higiene-laboral",
+    "type": "item",
+    "content": "Nuestros servicios de Seguridad e Higiene Laboral están diseñados para crear un ambiente de trabajo seguro. Implementamos programas de Seguridad y Salud Laboral (SSL), identificamos procesos peligrosos, realizamos mediciones ambientales (iluminación, temperatura, calor), gestionamos comités de seguridad y salud, y desarrollamos planes de evacuación y emergencia. Estamos alineados con los requerimientos del Inpsasel. Para más información o cotizaciones, por favor escribe a info@salmed.net o contáctanos por WhatsApp.",
+    "tags": [
+      "seguridad laboral e higiene",
+      "seguridad en el trabajo",
+      "higiene industrial",
+      "prevencion de riesgos laborales",
+      "programa de seguridad y salud laboral (SSL)",
+      "procesos peligrosos",
+      "mediciones ambientales",
+      "comite de seguridad y salud",
+      "planes de evacuacion y emergencia",
+      "auditoria tecnica inpsasel"
+    ]
+  },
+  {
+    "id": "odontologia-empresarial",
+    "type": "item",
+    "content": "Ofrecemos un servicio de Odontología Empresarial para cuidar la salud dental de tus colaboradores. Nuestros planes incluyen odontología general, atención personalizada y jornadas odontológicas directamente en tu empresa, con programas flexibles adaptados a tus necesidades. Para más información o cotizaciones, por favor escribe a info@salmed.net o contáctanos por WhatsApp.",
+    "tags": [
+      "odontologia empresarial",
+      "plan dental para empresas",
+      "salud bucal para empleados",
+      "jornadas odontologicas in company",
+      "dentista para empresas",
+      "odontologia general corporativa"
+    ]
+  },
+  {
+    "id": "capacitacion-adiestramiento",
+    "type": "item",
+    "content": "Contamos con un robusto servicio de Capacitación y Adiestramiento para fomentar una cultura de seguridad en tu empresa. Desarrollamos programas personalizados y soluciones prácticas para identificar, prevenir y controlar los riesgos laborales de manera efectiva, incluyendo capacitación para brigadas de emergencia y en primeros auxilios. Para más información o cotizaciones, por favor escribe a info@salmed.net o contáctanos por WhatsApp.",
+    "tags": [
+      "capacitacion y adiestramiento en seguridad",
+      "cursos de seguridad laboral",
+      "formacion para prevencion de riesgos",
+      "entrenamiento para brigadas",
+      "cultura de seguridad empresarial",
+      "capacitacion in company",
+      "charlas de seguridad",
+      "primeros auxilios"
+    ]
+  },
+  {
+    "id": "servicio-medico-in-company",
+    "type": "item",
+    "content": "Ofrecemos el Servicio Médico In Company, que consiste en asignar personal médico y de enfermería directamente en las instalaciones de tu empresa. Brindamos atención médica primaria, gestionamos el dispensario y promovemos el bienestar de los empleados en su lugar de trabajo. Para más información o cotizaciones, por favor escribe a info@salmed.net o contáctanos por WhatsApp.",
+    "tags": [
+      "servicio medico in company",
+      "medico en mi empresa",
+      "dispensario medico empresarial",
+      "enfermeria in situ",
+      "atencion medica en la oficina",
+      "salud para empleados en sitio",
+      "medicina empresarial"
+    ]
+  },
+  {
+    "id": "horario-atencion",
+    "type": "general",
+    "content": "Nuestro horario de atención administrativa es de lunes a viernes, de 8:00 a.m. a 4:00 p.m. (hora local). Sin embargo, los servicios operativos y eventos especiales se programan con flexibilidad para adaptarse a las necesidades de cada cliente.",
+    "tags": [
+      "cual es su horario de atencion",
+      "hasta que hora trabajan",
+      "estan abiertos los sabados",
+      "horario de oficina",
+      "atencion al cliente horario"
+    ]
+  },
+  {
+    "id": "jornadas-salud-in-company",
+    "type": "item",
+    "content": "Sí, diseñamos y ejecutamos jornadas y ferias de salud directamente en las instalaciones de tu empresa. Estas pueden incluir stands de medicina general, medicina ocupacional, laboratorios, toma de glicemia, saturación de oxígeno, control de tensión, peso, talla, visiometría, evaluación de postura y más. Contáctanos para diseñar una jornada a tu medida.",
+    "tags": [
+      "jornadas de salud para empresas",
+      "feria de salud in company",
+      "visitas medicas a empresas",
+      "chequeos medicos en la oficina",
+      "actividades de salud para empleados",
+      "jornada de despistaje",
+      "metodologia feria de salud",
+      "stands medicos"
+    ]
+  },
+  {
+    "id": "solicitar-asesoria-ergonomia",
+    "type": "general",
+    "content": "Para solicitar una asesoría en ergonomía laboral, puedes escribirnos por correo a info@salmed.net, contactarnos por mensaje directo en nuestras redes sociales o completar el formulario en nuestra web. Un especialista se pondrá en contacto para coordinar una evaluación.",
+    "tags": [
+      "como pido una asesoria en ergonomia",
+      "solicitar evaluacion ergonomica",
+      "contacto para asesoria de ergonomia",
+      "quiero una cotizacion de ergonomia"
+    ]
+  },
+  {
+    "id": "bienestar-emocional-salud-mental",
+    "type": "item",
+    "content": "Impulsamos el bienestar emocional y la salud mental en tu organización a través de talleres, charlas y dinámicas grupales. Nuestros programas se enfocan en el manejo del estrés, resiliencia, productividad emocional, creación de un clima laboral positivo y el desarrollo de equipos de trabajo efectivos. Contamos con psicólogos aliados para facilitar estos espacios.",
+    "tags": [
+      "programas de bienestar emocional",
+      "salud mental en el trabajo",
+      "talleres de manejo de estres",
+      "como mejorar el clima laboral",
+      "actividades de salud mental para empresas",
+      "charlas de resiliencia",
+      "alianzas con psicologos"
+    ]
+  },
+  {
+    "id": "apoyo-pymes",
+    "type": "general",
+    "content": "Sí, tenemos un fuerte compromiso con las PYMES. Ofrecemos programas y paquetes de servicios de salud y seguridad laboral completamente personalizados y adaptados al tamaño y presupuesto de pequeñas y medianas empresas. Atendemos empresas de todos los tamaños.",
+    "tags": [
+      "apoyan a pymes",
+      "planes para pequeñas empresas",
+      "servicios para pymes",
+      "apoyo a medianas empresas",
+      "programas para emprendedores",
+      "tamaño minimo de equipo"
+    ]
+  },
+  {
+    "id": "cotizacion-precios",
+    "type": "price",
+    "content": "El costo de nuestros servicios es personalizado y depende de factores como el número de empleados, la ubicación y los servicios específicos requeridos. Para darte un precio exacto, por favor contáctanos con los detalles de tu necesidad a través de info@salmed.net y te enviaremos una cotización formal.",
+    "tags": [
+      "cuanto cuesta una jornada de salud",
+      "precio de los servicios",
+      "solicitar cotizacion",
+      "valor de los servicios",
+      "quiero un presupuesto",
+      "costo del servicio",
+      "propuesta de precios"
+    ]
+  },
+  {
+    "id": "modalidad-capacitaciones",
+    "type": "item",
+    "content": "Ofrecemos nuestras capacitaciones y talleres en ambas modalidades: presencial, directamente en las instalaciones de tu empresa, y virtual (online), para adaptarnos a la preferencia y distribución geográfica de tus equipos.",
+    "tags": [
+      "capacitaciones virtuales o presenciales",
+      "dan cursos online",
+      "talleres presenciales",
+      "modalidad de capacitacion",
+      "sesiones online"
+    ]
+  },
+  {
+    "id": "servicio-ambulancia",
+    "type": "item",
+    "content": "Actualmente, no ofrecemos el servicio de alquiler de ambulancias para eventos de forma independiente. Nuestro personal paramédico se enfoca en la atención médica dentro de los planes de cobertura para empresas y eventos corporativos que gestionamos.",
+    "tags": [
+      "puedo contratar una ambulancia",
+      "alquilan ambulancias para eventos",
+      "servicio de ambulancia",
+      "necesito una ambulancia para mi evento"
+    ]
+  },
+  {
+    "id": "certificados-salud",
+    "type": "item",
+    "content": "Sí, apoyamos a las empresas en la gestión de los Certificados de Salud para sus colaboradores. Nos encargamos de realizar los exámenes de laboratorio y chequeos médicos requeridos para la emisión de dichos certificados ante el ente de salud correspondiente.",
+    "tags": [
+      "elaboran certificados de salud",
+      "emiten certificado medico",
+      "certificado de salud para trabajadores",
+      "apoyo con certificacion de salud"
+    ]
+  },
+  {
+    "id": "frecuencia-evaluacion-ocupacional",
+    "type": "general",
+    "content": "Por normativa general, se recomienda realizar la evaluación de salud ocupacional anualmente. Sin embargo, la frecuencia puede variar y ser menor dependiendo del tipo de actividad económica de la empresa y los riesgos específicos asociados al puesto de trabajo.",
+    "tags": [
+      "cada cuanto se repite la evaluacion de salud",
+      "frecuencia de examenes ocupacionales",
+      "cuando hacer evaluacion medica laboral"
+    ]
+  },
+  {
+    "id": "proceso-evaluacion-medica",
+    "type": "general",
+    "content": "Nuestro proceso de evaluación médica es ágil y eficiente: primero se agenda la cita, luego se realizan los exámenes y evaluaciones básicas según el perfil del cargo, y finalmente se emite un informe detallado con los resultados y recomendaciones.",
+    "tags": ["como es el proceso de evaluacion medica", "pasos para un examen ocupacional", "metodologia de evaluacion"]
+  },
+  {
+    "id": "pausas-activas-ejercicio-laboral",
+    "type": "item",
+    "content": "Sí, diseñamos e implementamos programas de pausas activas y ejercicio laboral. Ofrecemos sesiones guiadas por nuestros profesionales, tanto para personal de oficina como para trabajadores en planta productiva, con el fin de prevenir trastornos musculoesqueléticos.",
+    "tags": [
+      "programas de pausas activas",
+      "ejercicio en el trabajo",
+      "gimnasia laboral",
+      "sesiones de estiramiento para oficina",
+      "dinamicas de equipo",
+      "espacios de bienestar"
+    ]
+  },
+  {
+    "id": "charlas-nutricion-vida-saludable",
+    "type": "item",
+    "content": "Claro que sí. Contamos con nutricionistas calificados para diseñar y dictar charlas, talleres y programas completos sobre nutrición y fomento de hábitos de vida saludable para los colaboradores de tu empresa.",
+    "tags": [
+      "charlas de nutricion",
+      "estilo de vida saludable",
+      "programas con nutricionistas",
+      "fomentar habitos saludables",
+      "alimentacion en el trabajo"
+    ]
+  },
+  {
+    "id": "seguimiento-indicadores-salud",
+    "type": "item",
+    "content": "Sí, ofrecemos un servicio completo de seguimiento de indicadores de salud organizacional. Realizamos métricas de ausentismo, informes de morbilidad mensual, informes epidemiológicos trimestrales, y cálculo de índices de siniestralidad y severidad, entre otros.",
+    "tags": [
+      "seguimiento de indicadores de salud",
+      "metricas de ausentismo laboral",
+      "informe de morbilidad",
+      "reporte epidemiologico",
+      "indice de siniestralidad"
+    ]
+  },
+  {
+    "id": "gestion-eventos-corporativos",
+    "type": "item",
+    "content": "Gestionamos la cobertura de salud para eventos corporativos, coordinando toda la logística necesaria. Esto incluye la asignación de equipo médico calificado, personal de enfermería y paramédicos para garantizar la seguridad de los asistentes.",
+    "tags": [
+      "gestion de eventos corporativos",
+      "cobertura medica para eventos",
+      "equipo medico para eventos",
+      "logistica de salud en eventos"
+    ]
+  },
+  {
+    "id": "planes-recurrentes-clientes-frecuentes",
+    "type": "item",
+    "content": "Sí, ofrecemos planes de servicio continuo para nuestros clientes. Contamos con programas de visitas recurrentes en las áreas de Seguridad Laboral y Salud Ocupacional, con modalidades de seguimiento mensual, trimestral o anual.",
+    "tags": [
+      "planes continuos",
+      "servicio para clientes frecuentes",
+      "programas de seguimiento mensual",
+      "visitas recurrentes",
+      "contrato anual de servicios"
+    ]
+  },
+  {
+    "id": "soporte-post-servicio",
+    "type": "general",
+    "content": "Sí, brindamos soporte post-servicio. Ofrecemos atención continua vía chat, correo electrónico o llamada telefónica para dar seguimiento, resolver dudas y apoyar a nuestros clientes ante posibles visitas o auditorías de los entes gubernamentales.",
+    "tags": [
+      "soporte tecnico post-seguridad",
+      "ayuda despues del servicio",
+      "seguimiento y apoyo",
+      "atencion post-venta"
+    ]
+  },
+  {
+    "id": "agendar-inspeccion",
+    "type": "general",
+    "content": "Para agendar una inspección de seguridad laboral, simplemente escríbenos a info@salmed.net con los datos de tu empresa: nombre, cantidad de trabajadores, tipo de actividad, dirección y un número de teléfono de contacto. Nos comunicaremos a la brevedad.",
+    "tags": [
+      "como agendar una inspeccion",
+      "solicitar visita de seguridad laboral",
+      "programar inspeccion",
+      "contacto para inspeccion"
+    ]
+  },
+  {
+    "id": "cumplimiento-normativo",
+    "type": "general",
+    "content": "Absolutamente. Todos nuestros servicios se rigen por la normativa legal venezolana vigente en materia de seguridad y salud laboral ( Lopcymat, Inpsasel). Además, incorporamos las mejores prácticas globales y estándares internacionales para ofrecer un servicio de la más alta calidad.",
+    "tags": [
+      "cumplen con las normas nacionales",
+      "normativa venezolana",
+      "inpsasel",
+      "lopcymat",
+      "estándares internacionales de prevencion"
+    ]
+  },
+  {
+    "id": "confidencialidad-datos-medicos",
+    "type": "general",
+    "content": "Manejamos la confidencialidad de los datos médicos con la máxima rigurosidad. Toda la información es tratada con estricta reserva, en cumplimiento con el secreto médico profesional y las leyes nacionales de protección de datos.",
+    "tags": [
+      "como manejan la confidencialidad",
+      "privacidad de datos medicos",
+      "seguridad de la informacion medica",
+      "secreto medico"
+    ]
+  },
+  {
+    "id": "respaldo-auditorias-oficiales",
+    "type": "item",
+    "content": "Sí, nuestros servicios están diseñados para respaldar a tu empresa ante auditorías oficiales. Proporcionamos informes técnicos detallados y certificados por médicos ocupacionales debidamente registrados ante el Inpsasel, asegurando el cumplimiento normativo.",
+    "tags": [
+      "respaldan auditorias oficiales",
+      "informes para inpsasel",
+      "ayuda con auditorias de salud",
+      "certificacion oficial"
+    ]
+  },
+  {
+    "id": "medicion-impacto-bienestar",
+    "type": "item",
+    "content": "Medimos el impacto de nuestros programas de bienestar a través de herramientas cuantitativas y cualitativas. Realizamos encuestas de clima laboral (antes y después), analizamos indicadores de ausentismo y rotación, y presentamos reportes de resultados.",
+    "tags": [
+      "como miden el impacto",
+      "resultados de programas de bienestar",
+      "encuestas de clima laboral",
+      "indicadores de bienestar",
+      "reportes cuantitativos"
+    ]
+  },
+  {
+    "id": "capacitaciones-por-sector",
+    "type": "item",
+    "content": "Sí, diseñamos contenido de capacitación específico y adaptado a las necesidades de diferentes sectores productivos, incluyendo hotelería, comercio, industria, oficinas, entre otros.",
+    "tags": [
+      "capacitaciones especificas por sector",
+      "cursos para hoteleria",
+      "formacion para industria",
+      "capacitacion para oficinas"
+    ]
+  },
+  {
+    "id": "certificacion-profesionales",
+    "type": "general",
+    "content": "Sí, todo nuestro equipo está conformado por profesionales graduados, certificados y debidamente registrados ante los entes competentes, como médicos ocupacionales registrados en Inpsasel.",
+    "tags": [
+      "los medicos estan registrados",
+      "profesionales certificados",
+      "especialistas registrados inpsasel",
+      "certificacion de los medicos"
+    ]
+  },
+  {
+    "id": "capacitaciones-individuales-lideres",
+    "type": "item",
+    "content": "Sí, ofrecemos sesiones de coaching y capacitación individual para líderes y personal clave. Estos programas se enfocan en desarrollar una cultura de bienestar, liderazgo consciente, manejo del estrés y otras habilidades blandas.",
+    "tags": [
+      "capacitaciones individuales para lideres",
+      "coaching para gerentes",
+      "formacion para staff",
+      "liderazgo consciente"
+    ]
+  },
+  {
+    "id": "cobertura-geografica",
+    "type": "general",
+    "content": "Aunque nuestra sede principal está en Pampatar, Nueva Esparta, ofrecemos cobertura a nivel nacional. Realizamos despliegues regionales para servicios presenciales y contamos con modalidad virtual para llegar a cualquier ciudad del país.",
+    "tags": [
+      "como se adaptan a otras ciudades",
+      "cobertura nacional",
+      "servicios en caracas",
+      "atienden en todo el pais",
+      "despliegues virtuales"
+    ]
+  },
+  {
+    "id": "valor-agregado-diferenciador",
+    "type": "general",
+    "content": "Nuestro principal valor agregado es la experiencia reconocida, un equipo de profesionales altamente calificados, un enfoque humano y proactivo en la prevención, y la flexibilidad para adaptarnos a las necesidades de cada cliente. Combinamos el cumplimiento normativo local con las mejores prácticas globales.",
+    "tags": [
+      "que valor agregado ofrecen",
+      "cual es su diferencia con la competencia",
+      "porque elegirlos",
+      "diferenciador de la empresa"
+    ]
+  },
+  {
+    "id": "programa-estandar-bienestar",
+    "type": "item",
+    "content": "Un programa estándar de bienestar empresarial con nosotros puede incluir jornadas médicas de despistaje, capacitación en pausas activas, talleres de nutrición y manejo del estrés, junto con un plan de monitoreo y seguimiento de indicadores clave.",
+    "tags": [
+      "que incluye un programa de bienestar",
+      "paquete estandar de bienestar",
+      "plan basico de bienestar empresarial"
+    ]
+  },
+  {
+    "id": "entrega-material-capacitacion",
+    "type": "general",
+    "content": "Sí, al finalizar cada capacitación o taller, proporcionamos material de apoyo como guías y manuales en formato impreso o digital. También entregamos los certificados de asistencia correspondientes para los participantes.",
+    "tags": [
+      "entregan material grafico",
+      "dan manuales de capacitacion",
+      "documentos al finalizar",
+      "certificados de asistencia"
+    ]
+  },
+  {
+    "id": "ergonomia-teletrabajo",
+    "type": "item",
+    "content": "Sí, abordamos la ergonomía para home office o teletrabajo. Ofrecemos asesoría virtual para evaluar los puestos de trabajo en casa, proporcionamos listas de verificación (checklists) y recomendamos kits ergonómicos para prevenir lesiones.",
+    "tags": [
+      "ergonomia para home office",
+      "evaluacion de teletrabajo",
+      "riesgos del trabajo en casa",
+      "asesoria virtual ergonomia"
+    ]
+  },
+  {
+    "id": "seguimiento-post-evento",
+    "type": "general",
+    "content": "Claro. Después de cada evento o jornada, realizamos un seguimiento que incluye retroalimentación sobre los resultados, entrega de informes y recomendaciones. Según los hallazgos, proponemos planes de continuidad para seguir mejorando la salud de la organización.",
+    "tags": [
+      "hacen seguimiento post evento",
+      "que pasa despues de una jornada",
+      "retroalimentacion y recomendaciones",
+      "continuidad de resultados"
+    ]
+  },
+  {
+    "id": "campanas-salud-preventiva",
+    "type": "item",
+    "content": "Sí, diseñamos y ejecutamos campañas internas de salud preventiva para tu empresa. Estas campañas integrales pueden incluir la creación de mensajes clave, charlas de sensibilización, diseño de carteleras informativas y dinámicas para los equipos.",
+    "tags": [
+      "ayudan con campañas internas",
+      "campañas de salud preventiva",
+      "sensibilizacion de equipos",
+      "comunicacion interna de salud"
+    ]
+  },
+  {
+    "id": "tiempo-respuesta-programacion",
+    "type": "general",
+    "content": "Para programar una jornada o servicio, recomendamos coordinar con al menos 5 a 7 días de anticipación. Sin embargo, entendemos que pueden surgir urgencias y también ofrecemos servicios exprés sujetos a disponibilidad.",
+    "tags": [
+      "con cuanto tiempo debo programar",
+      "tiempo de respuesta para una jornada",
+      "agendar con anticipacion",
+      "servicio express"
+    ]
+  },
+  {
+    "id": "gestion-bajas-enfermedad",
+    "type": "item",
+    "content": "Frente a un alto índice de bajas por enfermedad, nuestro enfoque es proactivo. Evaluamos las posibles causas a través de nuestros informes de morbilidad, proponemos talleres preventivos sobre los padecimientos más comunes y acompañamos a la empresa con planes de bienestar para atacar la raíz del problema.",
+    "tags": [
+      "que hacer si hay muchas bajas por enfermedad",
+      "como reducir el ausentismo",
+      "gestion de enfermedad en el equipo",
+      "informes de morbilidad"
+    ]
+  },
+  {
+    "id": "valor-cultural",
+    "type": "general",
+    "content": "Aportamos un valor cultural tangible al convertir la prevención en un pilar de la identidad de tu empresa. Esto se traduce en beneficios directos como la reducción del ausentismo, el aumento de la productividad, un mejor clima laboral y un mayor compromiso y sentido de pertenencia de los colaboradores.",
+    "tags": [
+      "que valor cultural aportan",
+      "impacto en la cultura organizacional",
+      "beneficios culturales",
+      "cultura de prevencion"
+    ]
+  },
+  {
+    "id": "ubicacion",
+    "type": "general",
+    "content": "Nuestra sede se encuentra en la Av. Bolívar, cruce con la Av. Aldonza Manrique, Centro Comercial AB, Local PB-82, Pampatar, Estado Nueva Esparta.",
+    "tags": [
+      "donde estan ubicados",
+      "direccion de la oficina",
+      "sede pampatar",
+      "ubicacion exacta",
+      "donde quedan sus oficinas"
+    ]
+  }
+]
