@@ -4,7 +4,7 @@ const generateSHA256Hash = (password) => {
   return crypto.createHash('sha256').update(password).digest('hex');
 };
 
-const password = process.argv[2] || 'salmed.CHAT.admin';
+const password = process.argv[2] || 'YOUR_PASSWORD';
 
 console.log(`🔒 Generando hash SHA-256 para la contraseña: "${password}"`);
 const hash = generateSHA256Hash(password);
