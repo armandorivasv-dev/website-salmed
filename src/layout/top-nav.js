@@ -21,6 +21,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
 import { Facebook, Instagram, YouTube } from '@mui/icons-material';
+import Link from 'next/link';
 
 const menuItems = [
   {
@@ -130,13 +131,16 @@ function TopNav({ mode }) {
                 px: 0,
               }}
             >
-              <Image
-                src='/assets/logos/salmed-logo.png'
-                width={206 * 0.6}
-                height={92 * 0.6}
-                alt='salmed medicina ocupacional'
-                priority={true}
-              />
+              <Link href='/'>
+                <Image
+                  src='/assets/logos/salmed-logo.png'
+                  width={206 * 0.6}
+                  height={92 * 0.6}
+                  alt='salmed medicina ocupacional'
+                  priority={true}
+                />
+              </Link>
+
               <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                 {menuItems.map((item, index) => (
                   <div key={index}>

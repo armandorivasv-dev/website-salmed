@@ -1,8 +1,11 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-const DATA_DIR = path.join(process.cwd(), 'src', 'pages', 'api', 'chat-messages');
-const DATA_FILE = path.join(DATA_DIR, 'data.js');
+const DATA_DIR = path.join(process.cwd(), 'messages');
+const DATA_FILE = path.join(DATA_DIR, 'messages.json');
+
+//const DATA_DIR = path.join(process.cwd(), 'src', 'pages', 'api', 'chat-messages');
+//const DATA_FILE = path.join(DATA_DIR, 'data.js');
 const MAX_MESSAGE_SIZE = parseInt(process.env.MAX_MESSAGE_SIZE ?? '10485760'); // 10MB
 const MAX_PERSISTED_MESSAGES = 100; // Para rotación (últimos N en archivo principal)
 
