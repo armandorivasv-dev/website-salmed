@@ -25,7 +25,7 @@ export default async function handler(req, res) {
       const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
 
       const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
-      sendSmtpEmail.to = [{ email: 'salmed.platform@gmail.com' }];
+      sendSmtpEmail.to = [{ email: 'info@salmed.net' }];
       //sendSmtpEmail.to = [{ email: email }];
 
       sendSmtpEmail.sender = { email: 'salmed.platform@gmail.com', name: 'Salmed.net' };
