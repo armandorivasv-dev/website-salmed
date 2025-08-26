@@ -6,6 +6,7 @@ import { CHAT_APP_CONFIG } from '@/config/chat/app.config';
 import { CHAT_SEARCH_CONFIG, PRICE_INTENT_KEYWORDS } from '@/config/chat/search.config';
 import { CHAT_MESSAGES } from '@/config/chat/messages.config';
 import { MessageLocalService } from '@/services/chat/MessageLocalService';
+import { MessageBlobService } from '@/services/chat/MessageBlobService';
 
 // Clase para manejar errores personalizados
 class ChatbotError extends Error {
@@ -170,16 +171,17 @@ export default async function handler(req, res) {
     const systemResponse = await chatInstance.search(validQuestion);
     const systemResponseTime = Date.now() - startTime;
 
-    // servicio de mensajes original local
     const messageData = {
       userIp,
       userQuestion: validQuestion,
       systemResponse,
       systemResponseTime,
     };
-
+    // servicio de mensajes original local
     await MessageLocalService.message(messageData);
-    // fin servicio de mensajes original local
+
+    // servicio de mensajes en blob
+    await MessageBlobService.message(messageData);
 
     res.status(200).json({ systemResponse });
   } catch (error) {

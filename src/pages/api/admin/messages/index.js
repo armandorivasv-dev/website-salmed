@@ -1,5 +1,6 @@
 import { AuthUtils } from '@/utils/AuthUtils.js';
 import { MessageLocalService } from '@/services/chat/MessageLocalService.js';
+import { MessageBlobService } from '@/services/chat/MessageBlobService';
 
 async function verifyAdminAuth(req) {
   // Leer la cookie desde `req.cookies`
@@ -33,8 +34,11 @@ export default async function handler(req, res) {
     const { limit: limitParam } = req.query;
     const limit = parseInt(limitParam || '100', 10); // `10` es el radix (base numérica)
 
-    // La lógica para obtener los logs no cambia
-    const messages = await MessageLocalService.getMessages(limit);
+    // Servicio de mensajes local
+    //const messages = await MessageLocalService.getMessages(limit);
+
+    // Servicio de mensajes en blob
+    const messages = await MessageBlobService.getMessages(limit);
 
     // 4. Enviar la respuesta JSON usando `res.status().json()`
     return res.status(200).json({
