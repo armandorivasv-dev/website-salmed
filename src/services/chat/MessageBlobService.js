@@ -26,7 +26,13 @@ export class MessageBlobService {
       dataBlobs.sort((a, b) => new Date(b.uploadedAt) - new Date(a.uploadedAt));
       const latestBlob = dataBlobs[0];
 
-      const response = await fetch(latestBlob.url, { cache: 'no-store' });
+      const response = await fetch(`${latestBlob.url}?t=${Date.now()}`, {
+        cache: 'no-store',
+        headers: {
+          'Cache-Control': 'no-cache',
+          'Pragma': 'no-cache'
+        }
+      });
       if (!response.ok) {
         throw new MessageBlobError(`Error obteniendo messages: ${response.status}`);
       }
@@ -44,10 +50,12 @@ export class MessageBlobService {
     try {
       const jsonContent = JSON.stringify(messages, null, 2);
 
-      // Escribir el nuevo blob (creará una nueva URL por el sufijo aleatorio automático)
-      const newBlob = await put(`${MESSAGES_BLOB_PREFIX}.json`, jsonContent, {
+      // Escribir el nuevo blob con un timestamp explícito en el nombre
+      const uniqueSuffix = Date.now();
+      const newBlob = await put(`${MESSAGES_BLOB_PREFIX}-${uniqueSuffix}.json`, jsonContent, {
         access: 'public',
         contentType: 'application/json',
+        addRandomSuffix: false,
       });
 
       // Limpiar blobs anteriores regulares
@@ -73,6 +81,7 @@ export class MessageBlobService {
       await put(archiveKey, archiveContent, {
         access: 'public',
         contentType: 'application/json',
+        addRandomSuffix: false,
       });
 
       const recentMessages = messages.slice(-MAX_PERSISTED_MESSAGES);
