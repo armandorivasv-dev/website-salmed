@@ -1,6 +1,6 @@
-import { put, list } from '@vercel/blob';
+import { put, list, del } from '@vercel/blob';
 
-const MESSAGES_BLOB_KEY = 'chat-messages.json';
+const MESSAGES_BLOB_PREFIX = 'chat-messages';
 const MAX_MESSAGE_SIZE = parseInt(process.env.MAX_MESSAGE_SIZE ?? '10485760'); // 10MB
 const MAX_PERSISTED_MESSAGES = 1000;
 
@@ -15,12 +15,18 @@ class MessageBlobError extends Error {
 export class MessageBlobService {
   static getExistingMessages = async () => {
     try {
-      const { blobs } = await list({ prefix: MESSAGES_BLOB_KEY.split('.')[0] });
-      const messageBlob = blobs.find((blob) => blob.pathname === MESSAGES_BLOB_KEY);
+      const { blobs } = await list({ prefix: MESSAGES_BLOB_PREFIX });
+      
+      // Filtrar solo los archivos que sean del flujo normal (ignoramos los .archive)
+      const dataBlobs = blobs.filter(b => !b.pathname.includes('.archive.'));
+      
+      if (dataBlobs.length === 0) return [];
+      
+      // Ordenar para obtener el más reciente
+      dataBlobs.sort((a, b) => new Date(b.uploadedAt) - new Date(a.uploadedAt));
+      const latestBlob = dataBlobs[0];
 
-      if (!messageBlob) return [];
-
-      const response = await fetch(messageBlob.url);
+      const response = await fetch(latestBlob.url, { cache: 'no-store' });
       if (!response.ok) {
         throw new MessageBlobError(`Error obteniendo messages: ${response.status}`);
       }
@@ -37,12 +43,22 @@ export class MessageBlobService {
   static writeMessagesFile = async (messages) => {
     try {
       const jsonContent = JSON.stringify(messages, null, 2);
-      const blob = new Blob([jsonContent], { type: 'application/json' });
 
-      await put(MESSAGES_BLOB_KEY, blob, {
+      // Escribir el nuevo blob (creará una nueva URL por el sufijo aleatorio automático)
+      const newBlob = await put(`${MESSAGES_BLOB_PREFIX}.json`, jsonContent, {
         access: 'public',
         contentType: 'application/json',
       });
+
+      // Limpiar blobs anteriores regulares
+      const { blobs } = await list({ prefix: MESSAGES_BLOB_PREFIX });
+      const oldBlobs = blobs.filter(b => 
+        !b.pathname.includes('.archive.') && b.url !== newBlob.url
+      );
+      
+      if (oldBlobs.length > 0) {
+        await del(oldBlobs.map(b => b.url));
+      }
     } catch (error) {
       throw new MessageBlobError(`Error guardando mensajes: ${error.message}`);
     }
@@ -51,11 +67,10 @@ export class MessageBlobService {
   static rotateMessages = async (messages) => {
     try {
       const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-      const archiveKey = `data-${timestamp}.archive.json`;
+      const archiveKey = `chat-messages-${timestamp}.archive.json`;
       const archiveContent = JSON.stringify(messages, null, 2);
-      const archiveBlob = new Blob([archiveContent], { type: 'application/json' });
 
-      await put(archiveKey, archiveBlob, {
+      await put(archiveKey, archiveContent, {
         access: 'public',
         contentType: 'application/json',
       });

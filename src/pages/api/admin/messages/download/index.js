@@ -51,10 +51,9 @@ export default async function handler(req, res) {
     if (!(await verifyAdminAuth(req))) {
       return res.status(401).json({ error: 'No autorizado' });
     }
-    // Servicio de mensajes local
-    //const messages = await MessageLocalService.getMessages(1000);
-    // Servicio de mensajes en blob
-    const messages = await MessageBlobService.getMessages(1000);
+    const messages = process.env.VERCEL === '1'
+      ? await MessageBlobService.getMessages(1000)
+      : await MessageLocalService.getMessages(1000);
 
     const csvContent = convertToCSV(messages);
     const fileName = `messages-${new Date().toISOString().split('T')[0]}.csv`;

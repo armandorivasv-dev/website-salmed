@@ -34,11 +34,9 @@ export default async function handler(req, res) {
     const { limit: limitParam } = req.query;
     const limit = parseInt(limitParam || '100', 10); // `10` es el radix (base numérica)
 
-    // Servicio de mensajes local
-    //const messages = await MessageLocalService.getMessages(limit);
-
-    // Servicio de mensajes en blob
-    const messages = await MessageBlobService.getMessages(limit);
+    const messages = process.env.VERCEL === '1'
+      ? await MessageBlobService.getMessages(limit)
+      : await MessageLocalService.getMessages(limit);
 
     // 4. Enviar la respuesta JSON usando `res.status().json()`
     return res.status(200).json({

@@ -177,11 +177,12 @@ export default async function handler(req, res) {
       systemResponse,
       systemResponseTime,
     };
-    // servicio de mensajes original local
-    await MessageLocalService.message(messageData);
-
-    // servicio de mensajes en blob
-    await MessageBlobService.message(messageData);
+    // Guardar mensaje dependiendo del entorno
+    if (process.env.VERCEL === '1') {
+      await MessageBlobService.message(messageData);
+    } else {
+      await MessageLocalService.message(messageData);
+    }
 
     res.status(200).json({ systemResponse });
   } catch (error) {
