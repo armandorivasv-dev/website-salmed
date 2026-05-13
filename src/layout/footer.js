@@ -28,10 +28,10 @@ function DevelopedBy() {
     >
       {'Developed by '}
       <Link
-        href='https://www.armandorivasv.dev/'
+        href='https://rivascode.dev/'
         target='_blank'
       >
-        @armandorivasv.dev&nbsp;
+        @rivascode.dev&nbsp;
       </Link>
     </Typography>
   );
@@ -97,19 +97,19 @@ export default function Footer() {
             variant='subtitle1'
             fontWeight={400}
           >
-            Av Bolivar con Avenida Aldonza Manrique
+            Av Santiago Mariño
           </Typography>
           <Typography
             variant='subtitle1'
             fontWeight={400}
           >
-            Centro Comercial AB, Local PB-82
+            Centro Comercial Blue Sky, Local M1-3, mezzanina
           </Typography>
           <Typography
             variant='subtitle1'
             fontWeight={400}
           >
-            Pampatar - Isla De Margarita - Venezuela
+            Porlamar - Edo. Nueva Esparta - Venezuela
           </Typography>
         </Box>
         <Box
@@ -127,15 +127,15 @@ export default function Footer() {
           </Typography>
           <Link
             color='text.secondary'
-            href='mailto:contacto@salmed.net'
+            href='mailto:info@salmed.net'
           >
-            contacto@salmed.net
+            info@salmed.net
           </Link>
           <Typography
             variant='subtitle1'
             fontWeight={400}
           >
-            +58 (0412)607.09.25
+            +58(0412)607.09.25
           </Typography>
         </Box>
         <Box
